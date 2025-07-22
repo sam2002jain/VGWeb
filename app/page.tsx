@@ -94,7 +94,7 @@ function App() {
               <div className="relative w-full h-48">
                 <Image
                   src="/MV_CP.JPG"
-                  alt="Bhagwan Mahaveer Temple"
+                  alt="Mahavidhyalaya"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
@@ -112,7 +112,7 @@ function App() {
               <div className="relative w-full h-48">
                 <Image
                   src="/VL_CP.JPG"
-                  alt="Bhagwan Mahaveer Temple"
+                  alt="Vardhman Library"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
@@ -140,7 +140,7 @@ function App() {
             {/* Gallery Item 1 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <img
-                src="https://placehold.co/600x400/8B4513/FFFFFF?text=Gallery+Image+1"
+                src="/VL_CP.jpg"
                 alt="Gallery Image 1"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
@@ -151,10 +151,9 @@ function App() {
               </div>
             </div>
 
-            {/* Gallery Item 2 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <img
-                src="https://placehold.co/600x400/A0522D/FFFFFF?text=Gallery+Image+2"
+                src="MV_CP.jpg"
                 alt="Gallery Image 2"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
@@ -165,10 +164,9 @@ function App() {
               </div>
             </div>
 
-            {/* Gallery Item 3 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <img
-                src="https://placehold.co/600x400/CD853F/FFFFFF?text=Gallery+Image+3"
+                src="MV_CP.jpg"
                 alt="Gallery Image 3"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
@@ -182,7 +180,7 @@ function App() {
             {/* Gallery Item 4 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <img
-                src="https://placehold.co/600x400/D2B48C/333333?text=Gallery+Image+4"
+                src="BM_CP.jpg"
                 alt="Gallery Image 4"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
