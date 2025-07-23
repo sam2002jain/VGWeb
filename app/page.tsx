@@ -259,10 +259,10 @@ function App() {
           <div className="lg:w-1/2 text-center lg:text-left">
             <h2 className="text-4xl font-bold mb-6">Welcome to Vardhman Gyanteerth</h2>
             <p className="text-lg mb-4 leading-relaxed">
-              The Community who firmly believes in God's word.
+              The Community who firmly believes in God word.
             </p>
             <p className="text-lg mb-4 leading-relaxed">
-              'Vardhman Gyanteerth' complex is considered as one of the largest Jain
+              Vardhman Gyanteerth complex is considered as one of the largest Jain
               religious centres of its kind in the country. Come with us for research and exploration.
             </p>
             <p className="text-lg leading-relaxed">
