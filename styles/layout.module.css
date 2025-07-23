@@ -20,7 +20,22 @@
 }
 .section3{
   padding-block: 12;
-  background-color: rgb(128, 79, 44);
+  background-color: rgb(126, 75, 38);
+}
+
+.Footer{
+  background-color: #351d1d;
+  padding: 4rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #7b4b31;
+}
+.Footer2{
+  background-color: #351d1d;
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.9rem;
+  color: #7b4b31;
 }
 
 

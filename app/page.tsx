@@ -1,9 +1,26 @@
-import React from 'react';
+"use client"
+import React,{useState} from 'react';
 import Image from 'next/image';
 import styles from '../styles/layout.module.css';
 import Header from './header';
+import Footer from './footer';
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [currentImage, setCurrentImage] = useState('');
+
+  const openModal = (imageSrc:string) => {
+    setCurrentImage(imageSrc);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setCurrentImage('');
+  };
+
+
+
   return (
     <div className="min-h-screen bg-amber-100 font-sans text-white">
        <style>
@@ -48,7 +65,7 @@ function App() {
           </p>
         </div>
       </section>
-       <section className="py-12 bg-amber-100 text-gray-800">
+      <section className="py-12 bg-amber-100 text-gray-800">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-light text-center mb-4">Temple Complex</h2>
           <div className="w-26 h-1 bg-amber-800 mx-auto mb-4 rounded-full"></div>
@@ -145,33 +162,44 @@ function App() {
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <button className="bg-yellow-500 text-white p-3 rounded-full hover:bg-yellow-600 transition-colors duration-300">
+                <button
+                  onClick={() => openModal('/VL_CP.jpg')}
+                  className="bg-yellow-500 text-white p-3 rounded-full hover:bg-yellow-600 transition-colors duration-300"
+                >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                 </button>
               </div>
             </div>
 
+            {/* Gallery Item 2 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <img
-                src="MV_CP.jpg"
+                src="/MV_CP.jpg"
                 alt="Gallery Image 2"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <button className="bg-yellow-500 text-white p-3 rounded-full hover:bg-yellow-600 transition-colors duration-300">
+                <button
+                  onClick={() => openModal('/MV_CP.jpg')}
+                  className="bg-yellow-500 text-white p-3 rounded-full hover:bg-yellow-600 transition-colors duration-300"
+                >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                 </button>
               </div>
             </div>
 
+            {/* Gallery Item 3 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <img
-                src="MV_CP.jpg"
+                src="/MV_CP.jpg"
                 alt="Gallery Image 3"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <button className="bg-yellow-500 text-white p-3 rounded-full hover:bg-yellow-600 transition-colors duration-300">
+                <button
+                  onClick={() => openModal('/MV_CP.jpg')}
+                  className="bg-yellow-500 text-white p-3 rounded-full hover:bg-yellow-600 transition-colors duration-300"
+                >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                 </button>
               </div>
@@ -180,12 +208,15 @@ function App() {
             {/* Gallery Item 4 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <img
-                src="BM_CP.jpg"
+                src="/BM_CP.jpg"
                 alt="Gallery Image 4"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <button className="bg-yellow-500 text-white p-3 rounded-full hover:bg-yellow-600 transition-colors duration-300">
+                <button
+                  onClick={() => openModal('/BM_CP.jpg')}
+                  className="bg-yellow-500 text-white p-3 rounded-full hover:bg-yellow-600 transition-colors duration-300"
+                >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                 </button>
               </div>
@@ -200,6 +231,65 @@ function App() {
           </div>
         </div>
       </section>
+
+      {/* Image Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
+          onClick={closeModal} // Close modal when clicking outside the image
+        >
+          <div className="relative max-w-4xl max-h-full overflow-auto rounded-lg shadow-xl" onClick={(e) => e.stopPropagation()}>
+            <img
+              src={currentImage}
+              alt="Full View"
+              className="max-w-full max-h-[90vh] object-contain"
+            />
+            <button
+              onClick={closeModal}
+              className="absolute top-4 right-4 bg-white text-gray-800 rounded-full p-2 shadow-lg hover:bg-gray-200 transition-colors duration-200"
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+          </div>
+        </div>
+      )}
+
+        <section className="py-16 bg-white text-gray-800">
+        <div className="container mx-auto px-4 flex flex-col lg:flex-row items-center lg:items-start gap-12">
+          <div className="lg:w-1/2 text-center lg:text-left">
+            <h2 className="text-4xl font-bold mb-6">Welcome to Vardhman Gyanteerth</h2>
+            <p className="text-lg mb-4 leading-relaxed">
+              The Community who firmly believes in God's word.
+            </p>
+            <p className="text-lg mb-4 leading-relaxed">
+              'Vardhman Gyanteerth' complex is considered as one of the largest Jain
+              religious centres of its kind in the country. Come with us for research and exploration.
+            </p>
+            <p className="text-lg leading-relaxed">
+              It is the auspiciousness of Tirthankar Lord Mahavir, infinit Teerthankara, five
+              supereme beings, Lord manscript, Pulya Gurudev his follower Champaben and
+              with the help of great personalities that the built Vardhman Gyanteerth is a
+              meditatory land of the followers of truth. This place is not personalized but it
+              belongs to everyone to everyone. Vardhman Gyanteerth is ending preaches of
+              omniscience to every person.
+            </p>
+          </div>
+
+          <div className="lg:w-1/2 flex justify-center lg:justify-end">
+            <div className="bg-white rounded-lg shadow-xl overflow-hidden max-w-sm w-full">
+              <img
+                src="/user-avatar.png"
+                alt="Shri Ajit Prasad Jain"
+                className="w-full h-auto object-cover"
+              />
+              <div className="p-4 text-center bg-amber-100">
+                <p className="text-xl font-semibold text-gray-700">Shri Ajit Prasad Jain</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
     </div>
   );
 }
