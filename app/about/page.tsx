@@ -25,15 +25,15 @@ const About = () => {
             </h2>
             <div className="space-y-6 text-gray-700">
               <p className="leading-relaxed">
-                The trust, established in July 2000 in delhi, works for religious and social upliftment of the society and spreads the message of Jinvani. Apart from building the 'Mangalayatan' complex, the body is also planning to undertake other similar work of religious importance, such as construction of Digambar Jin temples, dharmashalas, libraries and research institutions.
+                The trust, established in July 2000 in delhi, works for religious and social upliftment of the society and spreads the message of Jinvani. Apart from building the gyanteerth complex, the body is also planning to undertake other similar work of religious importance, such as construction of Digambar Jin temples, dharmashalas, libraries and research institutions.
               </p>
               
               <p className="leading-relaxed">
-                The trust will also carry out extensive charity activities in the field of education by establishing educational institutions of various levels, from primary schools to universities. The is also engaged in publication of religious scriptures, books, magazines and journals to publicize and spread the messages of Jinvani and Pujya Gurudevshri Kanji Swami. It also conduct activities to instill qualities such as Truth, Non-violence, Non-theft and Celibacy, among today's youth.
+                The trust will also carry out extensive charity activities in the field of education by establishing educational institutions of various levels, from primary schools to universities. The is also engaged in publication of religious scriptures, books, magazines and journals to publicize and spread the messages of Jinvani and Pujya Gurudevshri Kanji Swami. It also conduct activities to instill qualities such as Truth, Non-violence, Non-theft and Celibacy, among today youth.
               </p>
 
               <p className="leading-relaxed">
-                The organisation is also taking up other works of social and human welfare including establishment of hospitals and dispensaries, conducting pilgrimage tours etc. Everyone benefits from the Trust's activities, irrespective of his religion, caste or gender.
+                The organisation is also taking up other works of social and human welfare including establishment of hospitals and dispensaries, conducting pilgrimage tours etc. Everyone benefits from the Trusts activities, irrespective of his religion, caste or gender.
               </p>
 
               <p className="leading-relaxed">
