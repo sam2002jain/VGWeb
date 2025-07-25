@@ -99,7 +99,7 @@ function App() {
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-center amita-regular">DwadShang swadhyay Bhawan</h3>
+                <h3 className="text-xl font-semibold mb-2 text-center amita-regular">श्री वर्धमान ज्ञानतीर्थ पाठशाला</h3>
                 <div className="w-16 h-1 bg-amber-800 mx-auto mb-4 rounded-full"></div>
                 <p className="text-gray-600 text-sm">
                   Shri Adinath Kund-Kund Kahan Digamber Jain Trust has enshrined &apos;Teerthankar Mahavir&apos; as &apos;Vidhinayak&apos; in the complex.
@@ -110,17 +110,17 @@ function App() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="relative w-full h-48">
                 <Image
-                  src="/MV_CP.JPG"
+                  src="/hostelBG.JPG"
                   alt="Mahavidhyalaya"
                   fill
                   style={{ objectFit: 'cover' }}
                 />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-2 text-center amita-regular">Mahavidhyalaya</h3>
+                <h3 className="text-xl font-semibold mb-2 text-center amita-regular">महाविद्यालय</h3>
                 <div className="w-16 h-1 bg-amber-800 mx-auto mb-4 rounded-full"></div>
                 <p className="text-gray-600 text-sm">
-                  Bhagwan Bahubali Temple, covering an area of around 4000 sq. feet, is also an attraction of Mangalayatan complex.
+                 जैनदर्शन एवं प्राकृत जैसे विषयों का गहराई से अध्ययन व शोध करने हेतु महाविद्यालय की स्थापना की गई है।
                 </p>
               </div>
             </div>
@@ -191,7 +191,7 @@ function App() {
             {/* Gallery Item 3 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <img
-                src="/MV_CP.jpg"
+                src="/hostelBG.jpg"
                 alt="Gallery Image 3"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
