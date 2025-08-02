@@ -5,7 +5,6 @@ import Footer from '../footer';
 import { BlogPost } from '../types/blog';
 import BlogModal from '../components/BlogModal';
 
-// Temporary mock data - replace with actual API call
 const mockPosts: BlogPost[] = [
   {
     id: '1',
@@ -17,7 +16,6 @@ const mockPosts: BlogPost[] = [
     imageUrl: '/blog-1.jpg',
     category: 'धर्म'
   },
-  // Add more mock posts...
 ];
 
 export default function Blog() {
@@ -25,9 +23,7 @@ export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
 
-  // TODO: Replace with actual API call
   useEffect(() => {
-    // Fetch posts from backend
   }, []);
 
   return (

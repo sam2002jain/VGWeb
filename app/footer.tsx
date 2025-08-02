@@ -8,6 +8,7 @@ function Footer(){
             <style>
         {`
         @import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Bebas+Neue&display=swap');
 
         .amita-regular {
           font-family: "Amita", serif;
@@ -20,6 +21,12 @@ function Footer(){
           font-weight: 700;
           font-style: normal;
         }
+
+        .bebas-neue-regular {
+          font-family: "Bebas Neue", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+      }
         `}
       </style>
         <section>

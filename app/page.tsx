@@ -42,29 +42,29 @@ function App() {
       </style>
       <Header/>
 
-      <section
-        className="relative h-[calc(100vh-80px)] flex items-center justify-center text-center bg-cover bg-center bg-white"
-        style={{
-          backgroundImage: `url(/VT_BG.png)`,
-          backgroundSize: 'contain',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          height: 'calc(100vh - 80px)',
-          display: 'flex',
-          paddingLeft: 100,
-        }}
-      >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+      {/* Hero Section */}
+      <section className="relative h-[calc(100vh-80px)] flex items-center justify-center">
+        <div 
+          className="absolute inset-0 w-full h-full"
+          style={{
+            backgroundImage: 'url(/BM_CP.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            //filter: 'brightness(0.8)'
+          }}
+        />
+        <div className="absolute inset-0 bg-black opacity-40"> </div>
 
-        <div className="relative z-10 top-10 p-4 max-w-4xl mx-auto">
-          <h1 className="text-2xl md:text-2xl lg:text-7xl font-extrabold leading-tight mb-4 text-yellow-200 drop-shadow-lg">
-            श्री वर्धमान ज्ञानतीर्थ
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-200 font-bold drop-shadow-md">
-            ग्रेटर नोएडा वेस्ट 
-          </p>
+        <div className="flex flex-col items-center justify-center h-full w-full text-center mt-145">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white drop-shadow-lg bebas-neue-regular">
+            Vardhman Gyanteerth<br/>
+              </h1>
+              <h6 className="text-2xl md:text-3xl font-bold mb-6 leading-tight text-white drop-shadow-lg bebas-neue-regular">Greater Noida</h6>
         </div>
+       
+
       </section>
+
       <section className="py-12 bg-amber-100 text-gray-800">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-light text-center mb-4">Temple Complex</h2>
