@@ -47,7 +47,7 @@ function App() {
         <div 
           className="absolute inset-0 w-full h-full"
           style={{
-            backgroundImage: 'url(/BM_CP.jpg)',
+            backgroundImage: 'url(/Home_BG.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
             //filter: 'brightness(0.8)'
