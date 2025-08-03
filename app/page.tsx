@@ -47,10 +47,9 @@ function App() {
         <div 
           className="absolute inset-0 w-full h-full"
           style={{
-            backgroundImage: 'url(/Home_BG.jpg)',
+            backgroundImage: 'url(/home_bg.jpg)', // Use lowercase and consistent extension
             backgroundSize: 'cover',
             backgroundPosition: 'center',
-            //filter: 'brightness(0.8)'
           }}
         />
         <div className="absolute inset-0 bg-black opacity-40"> </div>
@@ -74,7 +73,7 @@ function App() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="relative w-full h-48">
                 <Image
-                  src="/BM_CP.JPG"
+                  src="/bm_cp.jpg"
                   alt="Bhagwan Mahaveer Temple"
                   fill
                   style={{ objectFit: 'cover' }}
@@ -92,7 +91,7 @@ function App() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="relative w-full h-48">
                 <Image
-                src="/MV_CP.jpg"
+                src="/mv_cp.jpg"
                   alt="DwadShang swadhyay Bhawan"
                   fill
                   style={{ objectFit: 'cover' }}
@@ -128,7 +127,7 @@ function App() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
               <div className="relative w-full h-48">
                 <Image
-                  src="/VL_CP.JPG"
+                  src="/vl_cp.jpg"
                   alt="Vardhman Library"
                   fill
                   style={{ objectFit: 'cover' }}
@@ -157,7 +156,7 @@ function App() {
             {/* Gallery Item 1 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <img
-                src="/VL_CP.jpg"
+                src="/vl_cp.jpg"
                 alt="Gallery Image 1"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
@@ -174,7 +173,7 @@ function App() {
             {/* Gallery Item 2 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <img
-                src="/MV_CP.jpg"
+                src="/mv_cp.jpg"
                 alt="Gallery Image 2"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
@@ -208,7 +207,7 @@ function App() {
             {/* Gallery Item 4 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <img
-                src="/BM_CP.jpg"
+                src="/bm_cp.jpg"
                 alt="Gallery Image 4"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
