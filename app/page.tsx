@@ -190,7 +190,7 @@ function App() {
             {/* Gallery Item 3 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <img
-                src="/hostelBG.jpg"
+                src="/hostelbg.jpg"
                 alt="Gallery Image 3"
                 className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
               />
