@@ -47,7 +47,7 @@ function App() {
         <div 
           className="absolute inset-0 w-full h-full"
           style={{
-            backgroundImage: 'url(/home_bg.jpg)', // Use lowercase and consistent extension
+            backgroundImage: 'url(/home_bg.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
