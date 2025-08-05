@@ -15,7 +15,7 @@ function Header() {
   const dropdownItems = {
     mahavidhyalaya: ['MA', 'PH.D', 'Admissions', 'Faculty'],
     pathshala: ['Bal pathshala', 'Praud pathshala'],
-    shastraBhandaar: ['Books', 'Digital Library', 'Research Papers'],
+    shastraBhandaar: ['Books', 'Digital Library', 'Shaudh Patr'],
   };
 
   return (
@@ -27,7 +27,6 @@ function Header() {
           </Link>
         </div>
 
-        {/* Mobile menu button */}
         <button
           className="md:hidden text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -37,7 +36,6 @@ function Header() {
           </svg>
         </button>
 
-        {/* Desktop menu */}
         <ul className="hidden md:flex space-x-8 text-sm text-white">
           <li>
             <Link href="/about" className="hover:text-yellow-200 transition duration-300">
@@ -101,8 +99,21 @@ function Header() {
             </a>
             <div className="absolute top-full left-0 bg-white text-gray-800 py-2 rounded-md shadow-lg w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
               {dropdownItems.shastraBhandaar.map((item) => (
-                <a key={item} href="#" className="block px-4 py-2 hover:bg-gray-100">{item}</a>
-              ))}
+<Link
+                  key={item}
+                  href={
+                  item === 'Books'
+                    ? '/Shastra/books'
+                    : item === 'Digital Library'
+                    ? '/Shastra/elibrary'
+                    : item === 'Shaudh Patr'
+                    ? '/Shastra/shaudpatr'
+                    : '#'
+                  }
+                  className="block px-4 py-2 hover:bg-gray-100"
+                >
+                  {item}
+                </Link>              ))}
             </div>
           </li>
           <li>

@@ -152,9 +152,7 @@ function App() {
           <h2 className="text-4xl font-bold text-center mb-4">Our Gallery</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto mb-12 rounded-full"></div> {/* Underline */}
 
-          {/* Gallery Image Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
-            {/* Gallery Item 1 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <div className="relative w-full h-64">
                 <Image
@@ -174,7 +172,6 @@ function App() {
               </div>
             </div>
 
-            {/* Gallery Item 2 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <div className="relative w-full h-64">
                 <Image
@@ -194,7 +191,6 @@ function App() {
               </div>
             </div>
 
-            {/* Gallery Item 3 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <div className="relative w-full h-64">
                 <Image
@@ -214,7 +210,6 @@ function App() {
               </div>
             </div>
 
-            {/* Gallery Item 4 */}
             <div className="relative rounded-lg overflow-hidden shadow-lg group">
               <div className="relative w-full h-64">
                 <Image
@@ -235,7 +230,6 @@ function App() {
             </div>
           </div>
 
-          {/* View All Button */}
           <div className="text-center">
             <button className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transform hover:scale-105 transition duration-300 ease-in-out">
               VIEW ALL
@@ -244,11 +238,10 @@ function App() {
         </div>
       </section>
 
-      {/* Image Modal */}
       {isModalOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4"
-          onClick={closeModal} // Close modal when clicking outside the image
+          onClick={closeModal}
         >
           <div className="relative max-w-4xl max-h-full overflow-auto rounded-lg shadow-xl" onClick={(e) => e.stopPropagation()}>
             <div className="relative w-full h-[90vh]">
